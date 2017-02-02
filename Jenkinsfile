@@ -11,6 +11,9 @@ node {
                 
                 stage 'Unit Test'
 				sh 'mvn test '
+				
+				 stage 'Sonar'
+				sh 'mvn sonar:sonar '
 			
   	      
          } catch (ex) {
