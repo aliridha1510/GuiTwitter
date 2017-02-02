@@ -40,7 +40,7 @@ public class ApplicationITTest {
 
 	@Test
 	public void testAnotherTwitterDataa() {
-		ResponseEntity<String> entity = getRestTemplate().getForEntity("http://54.191.6.210:8080/twitterData",
+		ResponseEntity<String> entity = getRestTemplate().getForEntity("http://localhost:8080/twitterData",
 				String.class);
 		assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
 		assertThat(entity.getBody()).hasSize(20443);
@@ -49,21 +49,21 @@ public class ApplicationITTest {
 //	TEST MOCKITO  : 
 	@Test
 	public void testAnotherTwitterDataMap() {
-		ResponseEntity<String> entity = getRestTemplate().getForEntity("http://54.191.6.210:8080/twitterDataMap",
+		ResponseEntity<String> entity = getRestTemplate().getForEntity("http://localhost:8080/twitterDataMap",
 				String.class);
 		assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
 		assertThat(entity.getBody()).hasSize(7234);
 	}
 	@Test
 	public void testAnotherTwitterDataHashTag() {
-		ResponseEntity<String> entity = getRestTemplate().getForEntity("http://54.191.6.210:8080/twitterDataHashtag",
+		ResponseEntity<String> entity = getRestTemplate().getForEntity("http://localhost:8080/twitterDataHashtag",
 				String.class);
 		assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
 		assertThat(entity.getBody()).hasSize(6174);
 	}
 	@Test
 	public void testAnotherTwitterData() {
-		ResponseEntity<String> entity = getRestTemplate().getForEntity("http://54.191.6.210:8080/twitterDataAll",
+		ResponseEntity<String> entity = getRestTemplate().getForEntity("http://localhost:8080/twitterDataAll",
 				String.class);
 		assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
 		assertThat(entity.getBody()).hasSize(25924);
