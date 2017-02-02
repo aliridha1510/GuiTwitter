@@ -1,0 +1,47 @@
+<div sample-menu></div>
+<center>
+	<h2 text-align: center style="color: #66b3ff">NUMMBER OF TWEETS</h2>
+	<div>
+		<img
+			src="https://s-media-cache-ak0.pinimg.com/originals/16/a2/f4/16a2f4763eea1204a8a06985b642efe0.jpg" style="width:400px;height:128px;">
+	</div>
+
+
+</center>
+<nav aria-label="...">
+	<ul class="pager">
+		<li><a href="http://54.191.6.210:8080/#/twitter/data/remote">Previous</a></li>
+		<li><a href="http://54.191.6.210:8080/#/twitter/data/remote/hashtag">Next</a></li>
+
+	</ul>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<button class="btn btn-default" ng-click="reload()">Aktualisieren</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="table-responsive">
+				<table class="table table-hover table-striped">
+					<thead>
+						<tr style="background-color: Cyan">
+							<th>HASHTAGS</th>
+
+							<th style="background-color: Cyan">Anzahl</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="myTweet in tweets">
+							<td>{{myTweet.ID}}</td>
+							<td>{{myTweet.nb}}</td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

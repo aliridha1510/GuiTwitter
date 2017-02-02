@@ -1,0 +1,79 @@
+<div sample-menu></div>
+
+<H1 text-align: center ; style="color: #66b3ff">TWITTER HASHTAGS ANALYSIS</H1>
+<!-- 	<img
+		src="http://www.statisticbrain.com/wp-content/uploads/2015/10/twitter-company-statistics.jpg"
+		style="width: 200px; height: 200px;" align="right">  -->
+
+
+<ul class="nav nav-pills" role="tablist">
+	<li role="presentation" class="active"><a href="#">HOME <span
+			class="badge">1</span></a></li>
+	<li role="presentation"><a
+		href="https://twitter.com/signup?lang=en">CREATE ACCOUT TWITTER <span
+		
+			class="badge">1</span></a></li>
+
+	<li role="presentation"><a
+		href="http://54.191.6.210:8080/#/twitter/data/remote/hashtag/all">ALL
+			INFOTAMTIONEN OF TWITTER</a></li>
+			<span class="badge">113</span></a></li>
+	<li role="presentation"><a
+		href="http://54.191.6.210:8080/#/twitter/data/remote">NUMMBER OF
+			TWEETS <span class="badge">200</span>
+	</a></li>
+	<li role="presentation"><a
+		href="http://54.191.6.210:8080/#/twitter/data/remote/hashtag">NUMMBER
+			OF HASTAGS <span class="badge">150</span>
+	</a></li>
+	<li role="presentation"><a href="http://54.191.6.210:8080/#/home">LOCALTION
+			OF TWEETS<span class="badge">102</span>
+	</a></li>
+	<li role="presentation"><a
+		href="http://54.191.6.210:8080/#/twitter/data/graph">TWEETS create
+			account cgraphe<span class="badge">3</span>
+	</a></li>
+</ul>
+<nav class="navbar navbar-inverse">
+
+	<a class="navbar-brand" href="#"> Project SEMSETR SYSTEM
+		INTEGRATION TWITTER ANALYSIS VERSION 0.0 </a>
+	<li><a href="">
+
+
+			</div>
+</nav>
+
+<link rel="stylesheet"
+	href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+<style>
+#map {
+	height: 1500px;
+	width: 1500px;
+}
+
+.infoWindowContent {
+	font-size: 14px !important;
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+
+h2 {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+</style>
+
+<div ng-controller="DatasController">
+	<div id="map"></div>
+	<div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+		<a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+	</div>
+
+
+</div>
+
+
+
+
+

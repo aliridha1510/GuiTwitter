@@ -1,0 +1,64 @@
+<div sample-menu>
+	<div class="container">
+		<div>
+			<img
+				src="http://www.statisticbrain.com/wp-content/uploads/2015/10/twitter-company-statistics.jpg" style="width: 1090px; height: 200px;" />
+			<center>
+				<h2 text-align: center style="color: #66b3ff">ALL INFORMATIONEN OF TWITTER</h2>
+			</center>
+
+			<nav aria-label="...">
+				<ul class="pager">
+					<li><a href="http://54.191.6.210:8080/#/home">Previous</a></li>
+					<li><a
+						href="http://54.191.6.210:8080/#/twitter/data/remote/hashtag">Next</a></li>
+					<li><a ng-click="reload()">Aktualisieren</a></li>
+				</ul>
+			</nav>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12"></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-20">
+						<div class="table-responsive">
+							<table class="table table-hover table-striped">
+								<thead>
+									<tr style="background-color: #01DFD7">
+										<th style="background-color: #01DFD7"><h2>ID</h2></th>
+										<th style="background-color: #01DFD7"><h2>Name
+												TWEETS</h2></th>
+										<th style="background-color: #01DFD7"><h2>Start
+												Data</h2></th>
+<!-- 										<th style="background-color: #1aa3ff"><h2>RETWEET</h2></th> -->
+										<th style="background-color: #01DFD7"><h2>NB
+												RETWEET</h2></th>
+<!-- 										<th style="background-color: #1aa3ff"><h2>NB -->
+<!-- 												FAVORIS</h2></th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="AllTweetsInfo in alltweetsinfos">
+										<td style="background-color: SkyBlue"><i><h4>
+													{{AllTweetsInfo.id}}</h4></i></td>
+										<td style="background-color: Teal"><i><h4>{{AllTweetsInfo.user}}</h4></i></td>
+										<td style="background-color: SkyBlue"><i><h4>
+													{{AllTweetsInfo.date}}</h4></i></td>
+<!-- 										<td style="background-color: Teal"><i><h4> -->
+<!-- 													{{AllTweetsInfo.retweet}}</h4></i></td> -->
+<!-- 										<td style="background-color: SkyBlue"><i><h4> -->
+<!-- 													{{AllTweetsInfo.nbRetweet}}</h4></i></td> -->
+										<td style="background-color: Teal"><i><h24>
+												{{AllTweetsInfo.nbFavoris}}
+												</h4></i></td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

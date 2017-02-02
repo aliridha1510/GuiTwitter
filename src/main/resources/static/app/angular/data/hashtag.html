@@ -1,0 +1,62 @@
+<div sample-menu>
+
+	<div class="container">
+		<div>
+			<img
+				src="http://www.ypresrally.com/sites/ypresrally.com/files/twitter-hashtag-counter.jpg"
+				style="width: 1200px; height: 200px;">
+		</div>
+
+	</div>
+	<center>
+		<h2 text-align: center style="color: #66b3ff" >TWITTER HASHTAGS ANALYSIS</h2>
+	</center>
+
+
+	<nav aria-label="...">
+		<ul class="pager">
+			<li><a href="http://54.191.6.210:8080/#/home">Previous</a></li>
+			<li><a href="http://54.191.6.210:8080/#/twitter/data/remote/hashtag/all">Next</a></li>
+			<li><a  ng-click="reload()">Aktualisieren</a></li>
+				
+			<button ></button>
+		</ul>
+
+	</nav>
+
+	<div class="container">
+
+
+		<div class="row">
+			<div class="col-xs-12"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="table-responsive">
+					<table class="table table-hover table-striped">
+						<thead>
+							<tr style="background-color: Cyan">
+								<th style="background-color: #1aa3ff"><h2>#hashtags</h2></th>
+
+								<th style="background-color: #1aa3ff"><h2>popular</h2></th>
+
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="MyHasTag in hashtags">
+								<td style="background-color: SkyBlue"><i><h4>HashTags
+											is #{{MyHasTag.hashtag}}</h4></i></td>
+								<td style="background-color: Teal" style="font-size:36px;"><h4>
+										Nummer is :{{MyHasTag.htCount}}</h4></td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
