@@ -10,7 +10,7 @@ node {
                 sh 'mvn clean install -Dmaven.test.skip'
                 
                 stage 'Unit Test'
-				sh 'mvn test -Dmaven.test.failure.ignore'
+				sh 'mvn test '
 			
   	      
          } catch (ex) {
